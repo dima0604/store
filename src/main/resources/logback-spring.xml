@@ -1,0 +1,72 @@
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{dd-MM-YYYY HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/info.log</file>
+        <encoder>
+            <pattern>%d{dd-MM-YYYY HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="FILE_USERS_ACTIVITY" class="ch.qos.logback.core.FileAppender">
+        <file>logs/activity.log</file>
+        <encoder>
+            <pattern>%d{dd-MM-YYYY HH:mm:ss.SSS} - %msg%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>
+                <filter class="ch.qos.logback.classic.filter.LevelFilter">
+                    <level>WARN</level>
+                    <onMatch>ACCEPT</onMatch>
+                    <onMismatch>DENY</onMismatch>
+                </filter>
+            </onMismatch>
+        </filter>
+
+
+    </appender>
+
+    <appender name="FILE_WARNING" class="ch.qos.logback.core.FileAppender">
+        <file>logs/warnings.log</file>
+        <encoder>
+            <pattern>%d{dd-MM-YYYY HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+    <appender name="FILE_ERROR" class="ch.qos.logback.core.FileAppender">
+        <file>logs/errors.log</file>
+        <encoder>
+            <pattern>%d{dd-MM-YYYY HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <logger name="com.store.storeapp" level="debug">
+<!--        <appender-ref ref="CONSOLE" />-->
+        <appender-ref ref="FILE" />
+    </logger>
+    <logger name="com.store.storeapp" level="info">
+        <appender-ref ref="FILE_USERS_ACTIVITY" />
+    </logger>
+
+    <root level="error">
+        <appender-ref ref="FILE_ERROR" />
+        <appender-ref ref="CONSOLE" />
+    </root>
+    <root level="warn">
+        <appender-ref ref="FILE_WARNING" />"
+    </root>
+</configuration>
