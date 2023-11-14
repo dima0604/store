@@ -1,0 +1,153 @@
+14-11-2023 10:33:04.739 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 25180 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 10:33:04.754 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 10:33:07.369 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 2.936 seconds (process running for 3.369)
+14-11-2023 10:33:16.039 [http-nio-8888-exec-2] WARN  c.s.s.controllers.StoreController - Ошибка входа IP: 0:0:0:0:0:0:0:1
+14-11-2023 10:33:20.272 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 10:46:34.941 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 33876 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 10:46:34.956 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 10:46:37.556 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 2.925 seconds (process running for 3.348)
+14-11-2023 10:46:47.634 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 10:46:51.884 [http-nio-8888-exec-6] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 10:46:58.058 [http-nio-8888-exec-8] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:07:50.815 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 30056 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 11:07:50.830 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 11:07:53.448 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 2.943 seconds (process running for 3.374)
+14-11-2023 11:08:01.930 [http-nio-8888-exec-6] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:09:36.885 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 15852 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 11:09:36.898 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 11:09:39.430 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 2.861 seconds (process running for 3.272)
+14-11-2023 11:09:50.580 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:09:51.747 [http-nio-8888-exec-9] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:12:12.037 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 29720 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 11:12:12.054 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 11:12:14.601 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 2.887 seconds (process running for 3.317)
+14-11-2023 11:12:26.337 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:15:21.261 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 29372 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 11:15:21.276 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 11:15:23.808 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 2.854 seconds (process running for 3.36)
+14-11-2023 11:15:31.196 [http-nio-8888-exec-5] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:15:34.732 [http-nio-8888-exec-6] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31188
+14-11-2023 11:15:56.532 [http-nio-8888-exec-7] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31186
+14-11-2023 11:16:02.242 [http-nio-8888-exec-8] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31184
+14-11-2023 11:17:24.277 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 38296 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 11:17:24.295 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 11:17:27.181 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 3.265 seconds (process running for 3.77)
+14-11-2023 11:17:31.097 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:17:34.539 [http-nio-8888-exec-6] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31188
+14-11-2023 11:18:05.750 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 11540 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 11:18:05.767 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 11:18:08.848 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 3.461 seconds (process running for 3.992)
+14-11-2023 11:18:11.741 [http-nio-8888-exec-5] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:18:13.030 [http-nio-8888-exec-6] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:18:38.125 [http-nio-8888-exec-9] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31177
+14-11-2023 11:18:45.818 [http-nio-8888-exec-8] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:18:48.095 [http-nio-8888-exec-1] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:18:57.648 [http-nio-8888-exec-3] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:18:58.689 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:19:02.132 [http-nio-8888-exec-7] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:19:07.146 [http-nio-8888-exec-8] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:22:05.199 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 28540 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 11:22:05.218 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 11:22:07.762 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 2.879 seconds (process running for 3.302)
+14-11-2023 11:22:32.607 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 37656 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 11:22:32.624 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 11:22:35.355 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 3.09 seconds (process running for 3.599)
+14-11-2023 11:22:47.394 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:22:50.062 [http-nio-8888-exec-6] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31178
+14-11-2023 11:24:41.993 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 37044 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 11:24:42.008 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 11:24:44.506 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 2.818 seconds (process running for 3.255)
+14-11-2023 11:24:50.797 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:24:54.330 [http-nio-8888-exec-6] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31184
+14-11-2023 11:25:29.111 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 38900 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 11:25:29.127 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 11:25:31.606 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 2.81 seconds (process running for 3.257)
+14-11-2023 11:25:38.865 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:25:47.230 [http-nio-8888-exec-7] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31179
+14-11-2023 11:26:31.820 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 11920 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 11:26:31.835 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 11:26:34.337 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 2.827 seconds (process running for 3.238)
+14-11-2023 11:26:39.626 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:26:43.197 [http-nio-8888-exec-6] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31177
+14-11-2023 11:27:38.161 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 29860 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 11:27:38.179 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 11:27:40.846 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 3.024 seconds (process running for 3.434)
+14-11-2023 11:27:45.515 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:27:47.741 [http-nio-8888-exec-6] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31178
+14-11-2023 11:28:16.341 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 37788 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 11:28:16.357 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 11:28:18.910 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 2.885 seconds (process running for 3.367)
+14-11-2023 11:28:21.537 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:28:24.421 [http-nio-8888-exec-6] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31176
+14-11-2023 11:28:25.919 [http-nio-8888-exec-9] ERROR c.s.s.controllers.StoreController - Ошибка поиска загрузки ТТН: 20450809907188
+14-11-2023 11:28:36.328 [http-nio-8888-exec-8] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31182
+14-11-2023 11:28:39.356 [http-nio-8888-exec-7] ERROR c.s.s.controllers.StoreController - Ошибка поиска загрузки ТТН: 20450810037422
+14-11-2023 11:35:22.846 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 35488 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 11:35:22.861 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 11:35:25.434 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 2.904 seconds (process running for 3.334)
+14-11-2023 11:35:28.421 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:35:31.349 [http-nio-8888-exec-6] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31178
+14-11-2023 11:37:15.493 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 38264 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 11:37:15.509 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 11:37:18.077 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 2.923 seconds (process running for 3.341)
+14-11-2023 11:37:25.548 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:37:49.010 [http-nio-8888-exec-7] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31179
+14-11-2023 11:37:53.445 [http-nio-8888-exec-8] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31175
+14-11-2023 11:37:55.459 [http-nio-8888-exec-9] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31133
+14-11-2023 11:37:59.361 [http-nio-8888-exec-10] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31074
+14-11-2023 11:38:02.852 [http-nio-8888-exec-1] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31188
+14-11-2023 11:38:04.487 [http-nio-8888-exec-3] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31172
+14-11-2023 11:38:05.589 [http-nio-8888-exec-2] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:38:15.220 [http-nio-8888-exec-5] ERROR c.s.s.controllers.StoreController - Ошибка поиска загрузки № 31172
+14-11-2023 11:41:52.475 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 36720 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 11:41:52.490 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 11:41:54.927 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 2.759 seconds (process running for 3.164)
+14-11-2023 11:42:05.780 [http-nio-8888-exec-2] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:42:10.227 [http-nio-8888-exec-6] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31180
+14-11-2023 11:42:11.279 [http-nio-8888-exec-7] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:43:04.935 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 38208 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 11:43:04.951 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 11:43:07.610 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 3.013 seconds (process running for 3.445)
+14-11-2023 11:43:10.756 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:43:14.112 [http-nio-8888-exec-6] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31182
+14-11-2023 11:43:14.924 [http-nio-8888-exec-7] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:46:34.495 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 17816 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 11:46:34.510 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 11:46:37.033 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 2.924 seconds (process running for 3.446)
+14-11-2023 11:46:46.477 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:48:12.230 [http-nio-8888-exec-10] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:48:14.002 [http-nio-8888-exec-5] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:48:43.867 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 37152 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 11:48:43.885 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 11:48:46.460 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 2.918 seconds (process running for 3.34)
+14-11-2023 11:48:48.884 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:48:54.164 [http-nio-8888-exec-5] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31184
+14-11-2023 11:48:56.549 [http-nio-8888-exec-7] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:49:19.357 [http-nio-8888-exec-9] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:49:20.286 [http-nio-8888-exec-1] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:49:26.626 [http-nio-8888-exec-3] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31186
+14-11-2023 11:49:28.424 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31188
+14-11-2023 11:49:29.858 [http-nio-8888-exec-6] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31178
+14-11-2023 11:49:31.987 [http-nio-8888-exec-5] INFO  c.s.s.controllers.StoreController - Подтверждение загрузки № 31175
+14-11-2023 11:49:40.269 [http-nio-8888-exec-8] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 11:57:56.571 [http-nio-8888-exec-3] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 12:19:16.546 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 32624 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 12:19:16.562 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 12:19:19.258 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 3.022 seconds (process running for 3.444)
+14-11-2023 12:19:25.910 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 12:21:28.026 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 26464 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 12:21:28.041 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 12:21:30.898 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 3.222 seconds (process running for 3.744)
+14-11-2023 12:21:37.666 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 12:30:15.143 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 10460 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 12:30:15.158 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 12:30:17.710 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 2.895 seconds (process running for 3.38)
+14-11-2023 12:30:27.400 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 12:32:57.544 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 34964 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 12:32:57.559 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 12:33:00.169 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 2.94 seconds (process running for 3.362)
+14-11-2023 12:33:19.469 [http-nio-8888-exec-6] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
+14-11-2023 12:35:30.089 [main] INFO  c.store.storeapp.StoreAppApplication - Starting StoreAppApplication using Java 19 with PID 30104 (D:\Java_projects\Sig\storeApp\target\classes started by dimab in D:\Java_projects\Sig\storeApp)
+14-11-2023 12:35:30.104 [main] INFO  c.store.storeapp.StoreAppApplication - No active profile set, falling back to 1 default profile: "default"
+14-11-2023 12:35:32.769 [main] INFO  c.store.storeapp.StoreAppApplication - Started StoreAppApplication in 3.004 seconds (process running for 3.43)
+14-11-2023 12:35:38.641 [http-nio-8888-exec-4] INFO  c.s.s.controllers.StoreController - Пользователь зашел на стартовую страницу IP: 0:0:0:0:0:0:0:1
