@@ -9,6 +9,13 @@ $(document).ready(function () {
         $('#printAlert').hide();
         $('#confirmAlert').hide();
     });
+    setInterval(updatePage, 600000);
+    
+    function updatePage(){
+    	if (!$("#orderModal").hasClass("show")){
+    		window.location.href = "/";
+    	}
+    }
 });
 
 function showOrderModal(id, order) {
