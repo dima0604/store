@@ -70,7 +70,7 @@
             <tbody th:if="${shipments!=null}">
             <tr th:id="${shipment.getShipment_no()}" th:each="shipment: ${shipments}"
                 th:onclick="showOrderModal([[${shipment.getShipment_no()}]], [[${shipment}]])">
-                <td class="col-md-1 ">
+                <td class="col-md-2 ">
                     <label th:text="${shipment.getShipment_no()}"/>
                 </td>
                 <td class="col-md-1">
@@ -89,10 +89,10 @@
                     </label>
                 </td>
 
-                <td class="col-md-2">
+                <td class="col-md-3">
                     <label th:text="${shipment.getCity()}"/>
                 </td>
-                <td class="col-md-4">
+                <td class="col-md-2">
                     <label th:text="${shipment.getItems().size()}"/>
                 </td>
 
