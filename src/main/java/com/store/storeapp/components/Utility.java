@@ -8,7 +8,8 @@ import com.store.storeapp.models.Shipments;
 import jakarta.servlet.http.HttpServletRequest;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Component;
@@ -30,6 +31,11 @@ public class Utility {
 
     public Utility(ObjectMapper objectMapper) {
         this.objectMapper = objectMapper;
+    }
+
+    public boolean isSessionValid() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        return authentication != null && authentication.isAuthenticated();
     }
 
     public User getCurrentUser() {
@@ -76,42 +82,11 @@ public class Utility {
             T shipments = objectMapper.readValue(json, clazz);
             return shipments;
         } catch (Exception e) {
-            LOGGER.error("Ошибка конвертации json \n"+e.getMessage());
+            LOGGER.error("Json conversion error \n"+e.getMessage());
         }
         return null;
     }
 
-    private <T> List<T> sendRequest_d(String url, Class<T[]> clazz) {
-        RestTemplate restTemplate = new RestTemplate();
-        UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(url);
-        try {
-            ResponseEntity<T[]> response = restTemplate.getForEntity(builder.toUriString(), clazz);
-            if (response.getBody() == null) {
-                return null;
-            }
-            return Arrays.asList(response.getBody());
-        } catch (ResourceAccessException e) {
-            LOGGER.error("Ошибка отправки/получения данных при отправке списка отгрузок  " + e.getMessage());
-            return null;
-        } catch (HttpClientErrorException e) {
-            LOGGER.error("Ошибка отправки/получения данных при отправке списка отгрузок (код: " + e.getStatusCode() + ")  " + e.getMessage());
-            return null;
-        }
-    }
-
-    private String sendRequestAndGetString(String url) {
-        RestTemplate restTemplate = new RestTemplate();
-        try {
-            String response = restTemplate.getForObject(url, String.class);
-            return response;
-        } catch (ResourceAccessException e) {
-            LOGGER.error("Ошибка отправки/получения данных при отправке списка отгрузок  " + e.getMessage());
-            return null;
-        } catch (HttpClientErrorException e) {
-            LOGGER.error("Ошибка отправки/получения данных при отправке списка отгрузок (код: " + e.getStatusCode() + ")  " + e.getMessage());
-            return null;
-        }
-    }
 
     public byte[] downloadFile(String urlInput) throws IOException {
         byte[] byteContent = new byte[1024];
@@ -154,5 +129,29 @@ public class Utility {
         }
 
         return os.toByteArray();
+    }
+
+    public  <T> String sendSaveRequest(T obj, String url) {
+        RestTemplate restTemplate = new RestTemplate();
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+
+        HttpEntity<T> entity = new HttpEntity<>(obj, headers);
+        try {
+            ResponseEntity<String> response = restTemplate.exchange(
+                    url,
+                    HttpMethod.POST,
+                    entity,
+                    String.class
+            );
+            return response.getBody();
+        } catch (ResourceAccessException e) {
+            LOGGER.error("Error sending confirmation request (server not found)  " + e.getMessage());
+            return null;
+        } catch (HttpClientErrorException e) {
+            LOGGER.error("Error sending confirmation request (cod: " + e.getStatusCode() + ")  " + e.getMessage());
+            return null;
+        }
     }
 }

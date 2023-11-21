@@ -24,10 +24,10 @@
                 <button type="button"  class="btn btn-success position-relative" data-bs-toggle="collapse"
                         data-bs-target="#multiCollapseExample1" aria-expanded="false"
                         aria-controls="multiCollapseExample1" onclick="redirectToAnotherPage('/')" >
-                    Новые отгрузки
+                    Новые
                     <span id="newOrders" th:text="${count}"
                           class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
-                        <span class="visually-hidden">Новые отгрузки</span>
+                        <span class="visually-hidden">Новые</span>
                     </span>
                 </button>
             </li>
@@ -36,7 +36,7 @@
                 <button type="button" class="btn btn-secondary" data-bs-toggle="collapse"
                         data-bs-target="#multiCollapseExample2" aria-expanded="false"
                         aria-controls="multiCollapseExample2" onclick="redirectToAnotherPage('/closed')">
-                    Закрытые отгрузки
+                    Закрытые
                     <span id="closedOrders" th:text="${countClosed}" class="badge text-bg-info"></span>
                 </button>
             </li>
@@ -64,7 +64,7 @@
                 <th scope="col">Клиент</th>
                 <th scope="col">ТТН</th>
                 <th scope="col">Город</th>
-                <th scope="col">Отделение №</th>
+                <th scope="col">Количество позиций</th>
             </tr>
             </thead>
             <tbody th:if="${shipments!=null}">
@@ -79,14 +79,21 @@
                 <td class="col-md-2">
                     <label th:text="${shipment.getCustomer_name()}"/>
                 </td>
+<!--                <td class="col-md-2">-->
+<!--                    <label th:text="${shipment.getTransport_no()}"/>-->
+<!--                </td>-->
                 <td class="col-md-2">
-                    <label th:text="${shipment.getTransport_no()}"/>
+                    <label>
+                        <span th:text="${#strings.substring(shipment.getTransport_no(), 0, #strings.length(shipment.getTransport_no()) - 4)}"></span>
+                        <span th:text="${#strings.substring(shipment.getTransport_no(), #strings.length(shipment.getTransport_no()) - 4)}" style="font-weight: bold;"></span>
+                    </label>
                 </td>
+
                 <td class="col-md-2">
                     <label th:text="${shipment.getCity()}"/>
                 </td>
                 <td class="col-md-4">
-                    <label th:text="${shipment.getWarehouse_no()}"/>
+                    <label th:text="${shipment.getItems().size()}"/>
                 </td>
 
             </tr>
@@ -109,6 +116,7 @@
                                 <th scope="col"></th>
                                 <th scope="col">Код товара</th>
                                 <th scope="col">Название</th>
+                                <th scope="col">Оригинальное название</th>
                                 <th scope="col">Количество</th>
                             </tr>
                             </thead>
@@ -116,7 +124,8 @@
                             <tr id="trPattern" hidden="hidden">
                                 <td class="col-md-1 "></td>
                                 <td class="col-md-2 "></td>
-                                <td class="col-md-7 "></td>
+                                <td class="col-md-3 "></td>
+                                <td class="col-md-4 "></td>
                                 <td class="col-md-2 "></td>
                             </tr>
                             </tbody>
@@ -128,11 +137,29 @@
                             <button type="button" class="btn btn-outline-info" id="downloadButton">
                                 Печать ТТН
                             </button>
+                            <div id="printAlert" class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="d-flex">
+                                    <div class="toast-body">
+                                        <h6>Ошибка при попытке загрузить ТТН!</h6>
+                                        <br>Обратитесь к составителям отгрузки для проверки введенных данных.
+                                    </div>
+                                    <button id="hideToastButton" type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                                </div>
+                            </div>
                         </div>
                         <button type="button" class="btn btn-secondary" id="cancelButton" data-bs-dismiss="modal">
                             Отмена
                         </button>
-                        <button th:hidden="${flag} ? 'false' : 'hidden'"  type="button" class="btn btn-primary" id="acceptButton">Подтвердить</button>
+                        <button th:hidden="${flag} ? 'false' : 'hidden'"  type="button" class="btn btn-primary" id="confirmButton">Подтвердить</button>
+                        <div id="confirmAlert" class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="d-flex">
+                                <div class="toast-body">
+                                    <h6>Ошибка при попытке подтвердить отгрузку!</h6>
+                                    <br>Обратитесь к составителям отгрузки для проверки введенных данных.
+                                </div>
+                                <button id="hideConfirmButton" type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
