@@ -12,8 +12,11 @@ $(document).ready(function () {
     setInterval(updatePage, 600000);
     
     function updatePage(){
-    	if (!$("#orderModal").hasClass("show")){
-    		window.location.href = "/";
+    	const dateHour = (new Date()).getHours();
+    	if (dateHour > 8 && dateHour < 18){
+    		if (!$("#orderModal").hasClass("show")){
+    			window.location.href = "/";
+    		}
     	}
     }
 });
