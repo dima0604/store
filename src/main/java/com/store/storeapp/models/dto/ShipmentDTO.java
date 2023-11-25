@@ -13,6 +13,7 @@ public class ShipmentDTO implements Comparable<ShipmentDTO> {
     private String transport_no;
     private String city;
     private List<Item> items;
+    private String amount;
 
     @Override
     public int compareTo(ShipmentDTO o) {

@@ -9,16 +9,19 @@ $(document).ready(function () {
         $('#printAlert').hide();
         $('#confirmAlert').hide();
     });
+
     setInterval(updatePage, 600000);
-    
-    function updatePage(){
-    	const dateHour = (new Date()).getHours();
-    	if (dateHour > 8 && dateHour < 18){
-    		if (!$("#orderModal").hasClass("show")){
-    			window.location.href = "/";
-    		}
-    	}
+
+    function updatePage() {
+        const dateHour = (new Date()).getHours();
+        if(dateHour > 18 && dateHour < 23) {
+            if (!$("#orderModal").hasClass("show")) {
+                window.location.href = "/";
+            }
+        }
     }
+
+
 });
 
 function showOrderModal(id, order) {
@@ -166,3 +169,4 @@ function checkSession(callback) {
         }
     });
 }
+

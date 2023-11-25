@@ -28,6 +28,11 @@ public class Shipment {
         result.setCustomer_name(customer_name);
         result.setTransport_no(transport_no);
         result.setItems(items);
+        int counter = 0;
+        for (var item:items) {
+            counter+=Integer.parseInt(item.getQuantity());
+        }
+        result.setAmount(Integer.toString(counter));
         return result;
     }
 }
