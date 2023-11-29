@@ -51,6 +51,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(authConfig -> {
                     authConfig
                             .requestMatchers("/js/**").permitAll()
+                            .requestMatchers("/confirmTest").permitAll()
                             .anyRequest().authenticated();
                 })
                 .exceptionHandling(exception ->
@@ -105,8 +106,6 @@ public class SecurityConfig {
                                             Authentication authentication) throws IOException, ServletException {
 
             LOGGER.info("User " + authentication.getName() + " successfully logged, IP: " + getClientIpAddress(request));
-
-            // Пример перенаправления пользователя после успешной аутентификации
             response.sendRedirect("/");
         }
 

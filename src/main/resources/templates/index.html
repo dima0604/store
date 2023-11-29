@@ -40,6 +40,10 @@
                     <span id="closedOrders" th:text="${countClosed}" class="badge text-bg-info"></span>
                 </button>
             </li>
+            <br>
+            <li>
+                <button type="button" class="btn btn-primary" onclick="showConfirmAllModal()">Подтвердить все отгрузки</button>
+            </li>
         </ul>
 
 
@@ -101,6 +105,33 @@
             </tr>
             </tbody>
         </table>
+    </div>
+    <div class="modal fade" id="confirmAll" tabIndex="-1" aria-labelledby="orderModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Подтверждение всех закрытых отгрузок</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Вы точно хотите подтвердить все закрытые отгрузки?</p>
+                </div>
+                <div class="modal-footer">
+                    <div id="printAlertConfirmAll" class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="d-flex">
+                            <div class="toast-body">
+                                <h6>Ошибка при попытке подтвердить отгрузки</h6>
+                                <br>Обратитесь к составителям отгрузки для решения проблемы.
+                            </div>
+                            <button id="hideToastButton2" type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-primary" id="confirmAllButton">Подтвердить</button>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="modal fade" id="orderModal" tabIndex="-1" aria-labelledby="orderModalLabel"
          aria-hidden="true">

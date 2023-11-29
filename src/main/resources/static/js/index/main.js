@@ -9,6 +9,9 @@ $(document).ready(function () {
         $('#printAlert').hide();
         $('#confirmAlert').hide();
     });
+    $('#confirmAll').on('hidden.bs.modal', function () {
+        $('#printAlertConfirmAll').hide();
+    });
 
     setInterval(updatePage, 600000);
 
@@ -23,6 +26,9 @@ $(document).ready(function () {
 
 
 });
+function showConfirmAllModal() {
+    $('#confirmAll').modal('show');
+}
 
 function showOrderModal(id, order) {
     // document.getElementById('orderModalLabel').textContent = "Собрать отгрузку №" + id + "\tТТН: " + order.transport_no;
@@ -143,7 +149,33 @@ $('#downloadButton').click(function () {
         }
     });
 });
+$('#confirmAllButton').click(function () {
+    checkSession(function (isSessionValid) {
+        if (isSessionValid) {
+            $.ajax({
+                url: "/confirmAllShipments",
+                type: "GET",
+                success: function (data, status, xhr) {
+                    if (xhr.status == 200) {
+                        window.location.href = '/';
+                    }
+                },
+                error: function (xhr, status, error) {
+                    if (xhr.status == 400) {
+                        $('#printAlertConfirmAll').show();
+                    }
+                }
+            });
+        } else {
+            window.location.href = '/login';
+        }
 
+    });
+});
+
+$('#hideToastButton2').click(function () {
+    $('#printAlertConfirmAll').hide();
+});
 $('#hideToastButton').click(function () {
     $('#printAlert').hide();
 });

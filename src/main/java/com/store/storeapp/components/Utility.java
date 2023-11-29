@@ -132,20 +132,52 @@ public class Utility {
     }
 
     public  <T> String sendSaveRequest(T obj, String url) {
+            RestTemplate restTemplate = new RestTemplate();
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(MediaType.APPLICATION_JSON);
+
+            HttpEntity<T> entity = new HttpEntity<>(obj, headers);
+            try {
+                ResponseEntity<String> response = restTemplate.exchange(
+                        url,
+                        HttpMethod.POST,
+                        entity,
+                        String.class
+                );
+                if (response.getStatusCode().is2xxSuccessful()) {
+                    return response.getBody();
+                } else {
+                    LOGGER.error("Error sending confirmation request (HTTP status: " + response.getStatusCode() + ")");
+                    return null;
+                }
+            } catch (ResourceAccessException e) {
+                LOGGER.error("Error sending confirmation request (server not found)  " + e.getMessage());
+                return null;
+            } catch (HttpClientErrorException e) {
+                LOGGER.error("Error sending confirmation request (cod: " + e.getStatusCode() + ")  " + e.getMessage());
+                return null;
+            }
+    }
+    public  <T> String sendConfirmAllRequest(String url) {
         RestTemplate restTemplate = new RestTemplate();
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
 
-        HttpEntity<T> entity = new HttpEntity<>(obj, headers);
+        HttpEntity<T> entity = new HttpEntity<>(headers);
         try {
             ResponseEntity<String> response = restTemplate.exchange(
                     url,
-                    HttpMethod.POST,
+                    HttpMethod.GET,
                     entity,
                     String.class
             );
-            return response.getBody();
+            if (response.getStatusCode().is2xxSuccessful()) {
+                return response.getBody();
+            } else {
+                LOGGER.error("Error sending confirmation request (HTTP status: " + response.getStatusCode() + ")");
+                return null;
+            }
         } catch (ResourceAccessException e) {
             LOGGER.error("Error sending confirmation request (server not found)  " + e.getMessage());
             return null;

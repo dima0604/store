@@ -3,6 +3,7 @@ package com.store.storeapp.controllers;
 import com.store.storeapp.models.Shipments;
 import com.store.storeapp.models.dto.ConfirmDTO;
 import com.store.storeapp.models.dto.ShipmentDTO;
+import com.store.storeapp.models.dto.ShipmentsDTO;
 import com.store.storeapp.services.UserService;
 import com.store.storeapp.components.Utility;
 
@@ -22,10 +23,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.io.*;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 @Controller
 public class StoreController {
@@ -46,6 +44,8 @@ public class StoreController {
     private String url;
     @Value("${urlAccept}")
     private String urlAccept;
+    @Value("${urlConfirmAll}")
+    private String urlConfirmAll;
 
     public StoreController(PasswordEncoder encoder, UserService userService, Utility utility) {
         this.encoder = encoder;
@@ -58,7 +58,9 @@ public class StoreController {
         User user = utility.getCurrentUser();
 
         Shipments shipmentsJson = utility.sendRequest(url, Shipments.class);
-        if (shipmentsJson == null) return "unauthorized";
+        if (shipmentsJson == null){
+            return "unauthorized";
+        }
         shipments = shipmentsJson.toDTO("0").getShipments();
         Collections.sort(shipments);
         shipmentsClosed = shipmentsJson.toDTO("1").getShipments();
@@ -160,6 +162,25 @@ public class StoreController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Session expired");
         }
     }
+
+    @GetMapping("/confirmAllShipments")
+    public ResponseEntity<String> confirmAllShipments() {
+        String confirmResult = utility.sendConfirmAllRequest(urlConfirmAll);
+        if ("ok".equals(confirmResult)) {
+            LOGGER.info("All Shipments confirmed"
+                        + " (user: " + utility.getCurrentUser().getUsername() + ")");
+            return new ResponseEntity<>("Shipments confirmed", HttpStatus.OK);
+        }else{
+            return new ResponseEntity<>("Server not found", HttpStatus.BAD_REQUEST);
+        }
+    }
+    @GetMapping("/confirmTest")
+    public ResponseEntity<String> confirmTest() {
+            return new ResponseEntity<>("ok", HttpStatus.OK);
+//            return new ResponseEntity<>("Server not found", HttpStatus.BAD_REQUEST);
+    }
+
+
 
 }
 
